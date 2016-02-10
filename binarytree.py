@@ -1,3 +1,5 @@
+#Basic Tree Node Creator/Navigator
+
 class Node:
     """
     Tree node: left and right child + data which can be any object
