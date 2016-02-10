@@ -1,4 +1,6 @@
-__author__ = 'admin'
+"""
+Creates a tree of nodes, and sorts them by their value. Also can do a binary search.
+"""
 import timeit
 import math
 
