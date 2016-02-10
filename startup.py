@@ -1,3 +1,36 @@
+"""
+Problem:
+
+Your start-up is building a basic prototype where users can save URLs to your service with the idea that they can retrieve them later (perhaps when they have time to read them).  You've been put in charge with writing the server-side implementation of this service..
+
+For the purposes of this exercise, let's make the following assumptions:
+- You will just be responsible for writing functions that take input, take the appropriate action, and return if necessary (e.g. and not handle HTTP requests, etc)
+- Your prototype stack does not contain a database (you're a start-up, remember?).  You will need to store all data in memory (e.g. datastructures).  
+- You can implement this in the language of your choice.  Your code is not required to compile or run.  
+- Solutions to all 3 problems should live in the same file.  Make sure your implementation to past problems are updated as you work on future problems.  For example, if you need something to happen in saveUrl() from problem #1 for problem #2 or #3, please update it!
+
+Problem #1: Build Create, Read and Delete operations for this service.
+
+- Build a "Create" function called saveUrl() which takes in as input a userToken (String) and URL (String) and returns a boolean value of whether or not the URL was successfully saved.  If the URL has been saved for the user previously, this function should not save it and return false.
+- Build a "Read" function called getUrlsForUser() takes in a userToken and returns an array or list of all the URLs that user has saved, if any.
+- The "Delete" function called removeUrl() which takes in a userToken (String) and URL (String) and returns a boolean value of whether or not it was successfully deleted.  If the URL to be deleted has never been saved, the function should return false.
+
+Problem #2: B2B
+
+Your service is a hit.  Tons of users are saving URLs and life is good.  Le'ts imagine you're approached by website publishers (CNN, ESPN, etc) that want to find out which users have currently saved 1 or more of *their* URLs to your service.  Let's build a function called b2bUsers() which takes in a domain name String (e.g. "espn.com") and returns a list or array of user tokens.
+
+Assumptions:
+ - Imagine we have a magical function (let's call it getDomain()) that when given a String input of a URL, will return the domain name).  For example, getDomain("http://www.espn.com/story1") will return "espn.com"
+ - Ignore any complexities around subdomains. 
+ - Only use currently saved data.  If a user had saved a URL, but removed it, it does not count.
+
+Problem #3: Power Users
+
+Next, you want to know who your power users are so you can talk to them and learn their impressions of the product.  Let's build a function called powerUsers() that takes in no input and will return an array or list of the 5 user tokens that have stored the most URLs.  
+
+"""
+
+
 # Problem 1
 
 """def saveUrl(userToken, URL):
