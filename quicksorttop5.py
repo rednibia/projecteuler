@@ -1,3 +1,8 @@
+"""
+This is a self made function that pulls the top five names out of a list of objects.
+I have it drop the same and upper sections of the quicksort if they aren't needed at each step to increase efficiency.
+"""
+
 def quickSortTopFive(list):
     return [name[0] for name in modQuickSort(list)][0:5]
 
